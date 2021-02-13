@@ -1,0 +1,40 @@
+{
+  "name": "life-in-weeks",
+  "version": "1.0.0",
+  "description": "Your life. In weeks. ",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack && nodemon server",
+    "build": "webpack",
+    "build:watch": "webpack --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DigitalDsntHurt/life-in-weeks.git"
+  },
+  "keywords": [
+    "live",
+    "better"
+  ],
+  "author": "N Smith",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DigitalDsntHurt/life-in-weeks/issues"
+  },
+  "homepage": "https://github.com/DigitalDsntHurt/life-in-weeks#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/preset-env": "^7.12.16",
+    "@babel/preset-react": "^7.12.13",
+    "babel-loader": "^8.2.2",
+    "nodemon": "^2.0.7",
+    "webpack": "^5.21.2",
+    "webpack-cli": "^4.5.0"
+  }
+}
