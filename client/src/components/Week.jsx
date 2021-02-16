@@ -7,8 +7,14 @@ const WeekDiv = styled.div`
   border: solid 1px black;
 `;
 
-export default function Week () {
+// export default function Week ({ startDate, endDate, lifePhase, setHoverWeek }) {
+export default function Week ({ week, setHoverWeek }) {
+
+  const displayWeekInfo = () => {
+    console.log('hover!')
+  }
+
   return (
-    <WeekDiv />
+    <WeekDiv onMouseEnter={() => setHoverWeek(week)} onMouseLeave={() => setHoverWeek({})} />
   )
 }

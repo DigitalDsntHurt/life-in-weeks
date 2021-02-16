@@ -8,14 +8,19 @@ const YearDiv = styled.div`
   flex-direction: row;
 `;
 
-export default function Year ({ year, weeks }) {
+export default function Year ({ year, weeks, setHoverWeek }) {
   return (
     <YearDiv>
-      {
-        weeks.map(week => (
-          <Week />
-        ))
-      }
+      {weeks.map((week, i) => (
+          <Week
+            key={i}
+            // startDate={week.startDate}
+            // endDate={week.endDate}
+            // lifePhase={week.lifePhase}
+            week={week}
+            setHoverWeek={setHoverWeek}
+          />
+        ))}
     </YearDiv>
   )
 }
