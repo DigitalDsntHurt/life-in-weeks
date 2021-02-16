@@ -1,10 +1,21 @@
 import React from 'react'
+import styled from 'styled-components'
+
 import Week from './Week'
 
-export default function Year () {
+const YearDiv = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+
+export default function Year ({ year, weeks }) {
   return (
-    <div>
-      <Week />
-    </div>
+    <YearDiv>
+      {
+        weeks.map(week => (
+          <Week />
+        ))
+      }
+    </YearDiv>
   )
 }

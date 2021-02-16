@@ -1,7 +1,14 @@
 import React, { useState } from 'react'
+import styled from 'styled-components'
+
 import Year from './Year'
 
 import Time from '../../../lib/time'
+
+const LifeDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
 
 export default function Life () {
   const placeHolderBDay = new Date(1990, 3, 8)
@@ -22,11 +29,22 @@ export default function Life () {
 
   // )
 
-  Time.lifeWeeks(birthDate, deathDate)
+
+  const years = Time.lifeWeeks(birthDate, deathDate)
 
   return (
-    <div>
-      <Year />
-    </div>
+    <LifeDiv>
+      {/* <Year /> */}
+
+      {/* {
+        years.map((year, i) => (
+          <Year key={i} year={year} />
+        ))
+      } */}
+
+      {
+        years.map(year => <Year key={year.year} year={year.year} weeks={year.weeks} /> )
+      }
+    </LifeDiv>
   )
 }
