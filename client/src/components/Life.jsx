@@ -12,7 +12,7 @@ const LifeDiv = styled.div`
 
 export default function Life ({ setHoverWeek }) {
   const placeHolderBDay = new Date(1990, 3, 8)
-  const placeHolderDDay = new Date(placeHolderBDay.getFullYear() + 91, 11, 31)
+  const placeHolderDDay = new Date(placeHolderBDay.getFullYear() + 78, 11, 31)
   const [birthDate, setBirthDate] = useState(placeHolderBDay)
   const [deathDate, setDeathDate] = useState(placeHolderDDay)
 

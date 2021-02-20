@@ -23,6 +23,5 @@ export default function App () {
       <Life setHoverWeek={setHoverWeek} />
       <Info hoverWeek={hoverWeek} />
     </ColumnsContainer>
-
   )
 }

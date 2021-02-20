@@ -14,9 +14,6 @@ export default function Year ({ year, weeks, setHoverWeek }) {
       {weeks.map((week, i) => (
           <Week
             key={i}
-            // startDate={week.startDate}
-            // endDate={week.endDate}
-            // lifePhase={week.lifePhase}
             week={week}
             setHoverWeek={setHoverWeek}
           />

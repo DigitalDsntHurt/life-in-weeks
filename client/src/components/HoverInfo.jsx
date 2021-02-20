@@ -11,7 +11,6 @@ const HoverInfoDiv = styled.div`
 export default function HoverInfo ({ hoverWeek }) {
   return (
     <HoverInfoDiv>
-      {/* <div><strong>week start:</strong> { hoverWeek ? new Date(hoverWeek.weekStart.getFullYear(), hoverWeek.weekStart.getMonth(), hoverWeek.weekStart.getDate()) : 'no date selected'} </div> */}
       <div><strong>week start:</strong> { hoverWeek.weekStart ? hoverWeek.weekStart : '' } </div>
       <div><strong>week end:</strong> { hoverWeek.weekEnd ? hoverWeek.weekEnd : '' } </div>
       <div><strong>life phase:</strong> { hoverWeek.lifePhase } </div>
