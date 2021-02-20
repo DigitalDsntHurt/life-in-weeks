@@ -3,9 +3,9 @@ import styled from 'styled-components'
 
 const HoverInfoDiv = styled.div`
   border: solid 1px black;
+  padding: 88px;
   width: 33vw;
   margin: 0 auto;
-  padding: 88px;
 `;
 
 export default function HoverInfo ({ hoverWeek }) {
