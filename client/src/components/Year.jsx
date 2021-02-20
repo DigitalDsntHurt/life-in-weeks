@@ -11,6 +11,7 @@ const YearDiv = styled.div`
 export default function Year ({ year, weeks, setHoverWeek }) {
   return (
     <YearDiv>
+      {/* {year} */}
       {weeks.map((week, i) => (
           <Week
             key={i}
