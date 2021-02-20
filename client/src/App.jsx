@@ -7,7 +7,8 @@ import Info from './components/Info'
 const ColumnsContainer = styled.div`
   display: flex;
   flex-direction: row;
-  width: 100vw;
+  // width 100vw;
+  padding: 1vh 1vw;
 `
 
 export default function App () {

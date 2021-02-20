@@ -8,6 +8,8 @@ import Time from '../../../lib/time'
 const LifeDiv = styled.div`
   display: flex;
   flex-direction: column;
+  flex-grow: 2;
+  flex-shrink: 2;
 `;
 
 export default function Life ({ setHoverWeek }) {

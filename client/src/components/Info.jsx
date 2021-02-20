@@ -6,8 +6,8 @@ import HoverInfo from './HoverInfo'
 const InfoDiv = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  padding: 0 1vw;
+  flex-grow: 1;
+  flex-shrink: 1;
 `;
 
 export default function Info ({ hoverWeek }) {
